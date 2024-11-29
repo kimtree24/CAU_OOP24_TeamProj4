@@ -1,0 +1,4 @@
+01, 모아나, 애니메이션, ALL, 100, src/img/모아나.jpg
+02, 위키드, 판타지, ALL, 160, src/img/위키드.jpg
+03, 청설, 드라마, ALL, 109, src/img/청설.jpg
+04, 괴물, 드라마, TWELVE, 127, src/img/괴물.jpg
