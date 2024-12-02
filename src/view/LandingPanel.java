@@ -10,7 +10,7 @@ public class LandingPanel extends JFrame {
     public LandingPanel() {
         // 기본 설정
         setTitle("TicketMachine");
-        setSize(700, 800);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 

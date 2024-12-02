@@ -24,7 +24,7 @@ public class ChooseSeatPanel extends JFrame {
 
         // 기본 프레임 설정
         setTitle("Choose Your Seat");
-        setSize(700, 800);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
 

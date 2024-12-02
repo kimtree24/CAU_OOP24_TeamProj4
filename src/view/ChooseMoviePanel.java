@@ -22,7 +22,7 @@ public class ChooseMoviePanel extends JFrame {
     public ChooseMoviePanel() {
         // 기본 프레임 설정
         setTitle("Choose Movie");
-        setSize(700, 800);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 

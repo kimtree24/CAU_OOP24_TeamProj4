@@ -12,7 +12,7 @@ public class PrintTicketPanel extends JFrame {
 
     public PrintTicketPanel() {
         setTitle("Your Ticket");
-        setSize(600, 800);
+        setSize(400, 600);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
     }
