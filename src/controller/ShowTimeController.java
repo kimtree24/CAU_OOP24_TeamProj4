@@ -32,8 +32,8 @@ public class ShowTimeController {
     private void initialize() {
 //        view.renderTimeTable(timeTableList.getTimeTableForMovie(selectedMovie.getId()));
         List<TimeTableList.TimeTableEntry> timeTableEntries = timeTableList.getTimeTableForMovie(selectedMovie.getId());
-
         List<String> dates = new ArrayList<>();
+
         for (TimeTableList.TimeTableEntry entry : timeTableEntries) {
             String date = entry.getDate();
             if (!dates.contains(date)) {
@@ -48,6 +48,10 @@ public class ShowTimeController {
             List<TimeTableList.TimeTableEntry> filterdTimes = timeTableList.getTimeTableForMovieAndDate(selectedMovie.getId(), firstDate);
             view.renderTimeTable(filterdTimes);
         }
+
+//        if (!dates.isEmpty()) {
+//            dateComboBox.setSelectedIndex(0);
+//        }
     }
 
     private void onTimeSelected(Movie movie, TimeTableList.TimeTableEntry selectedTime) {

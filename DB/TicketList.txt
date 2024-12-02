@@ -1,5 +1,2 @@
 TICKET-1732878295776,src/img/모아나.jpg,모아나,애니메이션,ALL,100,2024-12-05,13:00,4관,Seat16,adult,Military
 TICKET-1732891421021,src/img/청설.jpg,청설,드라마,ALL,109,2024-12-01,14:00,2관,Seat16,adult,Military
-TICKET-1733162910845,src/img/모아나.jpg,모아나,애니메이션,ALL,100,2024-12-01,08:30,1관,Seat1,adult,
-TICKET-1733162961770,src/img/모아나.jpg,모아나,애니메이션,ALL,100,2024-12-01,08:30,1관,Seat1,adult,
-TICKET-1733163033725,src/img/모아나.jpg,모아나,애니메이션,ALL,100,2024-12-01,08:30,1관,Seat1,adult,

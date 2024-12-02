@@ -31,13 +31,24 @@ public class ChooseTimePanel extends JFrame {
 
         JLabel titleLabel = new JLabel("Select Time for: " + movie.getTitle(), JLabel.CENTER); // 영화 제목 표시
         titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
-        add(titleLabel, BorderLayout.NORTH);
+//        add(titleLabel, BorderLayout.NORTH);
 
         // 추가
         // 날짜 선택
         dateComboBox = new JComboBox<>();
         dateComboBox.addActionListener(e -> onDateSelected());
-        add(dateComboBox, BorderLayout.CENTER);
+        JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        topPanel.add(new JLabel("Select Date:"));
+        topPanel.add(dateComboBox);
+//        add(topPanel, BorderLayout.NORTH);
+//        add(dateComboBox, BorderLayout.CENTER);
+
+        JPanel headerPanel = new JPanel();
+        headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.Y_AXIS));
+        headerPanel.add(titleLabel);
+        headerPanel.add(topPanel);
+
+        add(headerPanel, BorderLayout.NORTH);
 
         // 시간표를 표시할 패널
         timePanel = new JPanel();
@@ -77,10 +88,10 @@ public class ChooseTimePanel extends JFrame {
         }
     }
 
-    // 선택된 Movie 반환
-    public Movie getSelectedMovie() {
-        return selectedMovie;
-    }
+//    // 선택된 Movie 반환
+//    public Movie getSelectedMovie() {
+//        return selectedMovie;
+//    }
 
     // 타임테이블 DB에서 가져온 것 바탕으로 화면에 표시
     public void renderTimeTable(List<TimeTableList.TimeTableEntry> timeTable) {
@@ -111,6 +122,7 @@ public class ChooseTimePanel extends JFrame {
     // 추가
     // 날자 선택
     public void populateDateComboBox(List<String> dates) {
+        dateComboBox.removeAllItems();
         for (String date : dates) {
             dateComboBox.addItem(date);
         }
