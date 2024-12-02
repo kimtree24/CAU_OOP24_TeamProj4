@@ -50,7 +50,7 @@ public class ChooseSeatPanel extends JFrame {
                 } else {
                     // 선택
                     selectedSeats.add(seatButton.getText());
-                    seatButton.setBackground(Color.GREEN);
+                seatButton.setBackground(Color.GREEN);
                 }
                 //System.out.println("Selected seats: " + selectedSeats); // 디버깅 로그
             });

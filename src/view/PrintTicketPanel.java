@@ -46,6 +46,21 @@ public class PrintTicketPanel extends JFrame {
         panel.add(new JLabel("Discounts: " + ticket.getDiscounts()));
 
         add(panel, BorderLayout.CENTER);
+
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        JButton backButton = new JButton("Home");
+        JButton printButton = new JButton("Print");
+        backButton.addActionListener(e -> {
+            this.dispose();
+            new LandingPanel();
+        });
+        printButton.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "종이티켓이 출력됩니다.", "Print Ticket", JOptionPane.INFORMATION_MESSAGE);
+        });
+        buttonPanel.add(backButton);
+        buttonPanel.add(printButton);
+        add(buttonPanel, BorderLayout.SOUTH);
+
         setVisible(true);
     }
 }
