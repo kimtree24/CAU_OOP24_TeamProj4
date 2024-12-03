@@ -22,7 +22,7 @@ public class ChooseMoviePanel extends JFrame {
     public ChooseMoviePanel() {
         // 기본 프레임 설정
         setTitle("Choose Movie");
-        setSize(700, 800);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -40,18 +40,26 @@ public class ChooseMoviePanel extends JFrame {
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         // 폰트 관련
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
-        genreLabel.setFont(new Font("Arial", Font.PLAIN, 18));
-        ageLabel.setFont(new Font("Arial", Font.PLAIN, 18));
-        runningTimeLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+        // 수정
+        // 기존 폰트 가져오기
+        Font currentFont = titleLabel.getFont();
+        // 기존 폰트의 이름과 스타일은 유지하고 크기만 변경
+        Font newFont = currentFont.deriveFont(20f); // 크기를 24로 설정
+        // 변경된 폰트 적용
+        titleLabel.setFont(newFont);
+
+//        titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
+//        genreLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+//        ageLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+//        runningTimeLabel.setFont(new Font("Arial", Font.PLAIN, 18));
 
         // 패널에 라벨 추가
         movieInfoPanel.add(titleLabel);
-        movieInfoPanel.add(Box.createVerticalStrut(10));
+        movieInfoPanel.add(Box.createVerticalStrut(4));
         movieInfoPanel.add(genreLabel);
-        movieInfoPanel.add(Box.createVerticalStrut(10));
+        movieInfoPanel.add(Box.createVerticalStrut(4));
         movieInfoPanel.add(ageLabel);
-        movieInfoPanel.add(Box.createVerticalStrut(10));
+        movieInfoPanel.add(Box.createVerticalStrut(4));
         movieInfoPanel.add(runningTimeLabel);
 
         // 버튼 패널 생성
