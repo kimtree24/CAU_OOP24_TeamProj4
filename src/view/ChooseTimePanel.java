@@ -30,7 +30,17 @@ public class ChooseTimePanel extends JFrame {
         setLayout(new BorderLayout());
 
         JLabel titleLabel = new JLabel("Select Time for: " + movie.getTitle(), JLabel.CENTER); // 영화 제목 표시
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
+
+        // 폰트 관련
+        // 수정
+        // 기존 폰트 가져오기
+        Font currentFont = titleLabel.getFont();
+        // 기존 폰트의 이름과 스타일은 유지하고 크기만 변경
+        Font newFont = currentFont.deriveFont(24f); // 크기를 24로 설정
+        // 변경된 폰트 적용
+        titleLabel.setFont(newFont);
+
+//        titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
 //        add(titleLabel, BorderLayout.NORTH);
 
         // 추가
