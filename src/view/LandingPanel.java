@@ -1,6 +1,7 @@
 package view;
 
 import controller.MovieController;
+import controller.TicketCheckController;
 import model.MovieList;
 
 import javax.swing.*;
@@ -29,8 +30,13 @@ public class LandingPanel extends JFrame {
         JButton ticketCheckButton = new JButton("티켓 확인하기");
         JButton bookTicketButton = new JButton("예매하기");
 
-        // 티켓 확인하기 버튼 (아직 미구현)
-        ticketCheckButton.addActionListener(e -> JOptionPane.showMessageDialog(this, "티켓 확인 화면으로 이동합니다."));
+        //수정
+        // 티켓 확인하기 버튼 클릭 시 TicketCheckPanel로 이동
+        ticketCheckButton.addActionListener(e -> {
+            this.dispose(); // 현재 창 닫기
+            TicketCheckPanel ticketCheckPanel = new TicketCheckPanel(); // View 생성
+            new TicketCheckController(ticketCheckPanel); // Controller 생성 및 연결
+        });
 
         // 예매하기 버튼 클릭 시 ChooseMoviePanel으로 이동
         bookTicketButton.addActionListener(e -> {
