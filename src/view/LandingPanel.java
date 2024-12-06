@@ -27,8 +27,8 @@ public class LandingPanel extends JFrame {
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(100, 200, 100, 200)); // 여백 설정
 
         // 버튼 추가
-        JButton ticketCheckButton = new JButton("티켓 확인하기");
-        JButton bookTicketButton = new JButton("예매하기");
+        JButton ticketCheckButton = new JButton("Confirm Ticket");
+        JButton bookTicketButton = new JButton("Make a reservation");
 
         //수정
         // 티켓 확인하기 버튼 클릭 시 TicketCheckPanel로 이동

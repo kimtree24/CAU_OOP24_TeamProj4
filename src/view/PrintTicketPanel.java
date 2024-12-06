@@ -55,7 +55,7 @@ public class PrintTicketPanel extends JFrame {
             new LandingPanel();
         });
         printButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(this, "종이티켓이 출력됩니다.", "Print Ticket", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Ticket is printed", "Print Ticket", JOptionPane.INFORMATION_MESSAGE);
         });
         buttonPanel.add(backButton);
         buttonPanel.add(printButton);

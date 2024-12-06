@@ -7,3 +7,4 @@ TICKET-1733417392194,src/img/모아나.jpg,모아나2,애니메이션,ALL,100,20
 TICKET-1733420394588,src/img/모아나.jpg,모아나2,애니메이션,ALL,100,2024-12-01,08:30,1관,Seat1,adult,
 TICKET-1733421813221,src/img/모아나.jpg,모아나2,애니메이션,ALL,100,2024-12-01,08:30,1관,Seat28,adult,
 TICKET-1733422045361,src/img/모아나.jpg,모아나2,애니메이션,ALL,100,2024-12-01,08:30,1관,Seat1,adult,
+TICKET-1733498228491,src/img/위키드.jpg,위키드,판타지,ALL,160,2024-12-01,09:00,2관,Seat15,teen,Military
